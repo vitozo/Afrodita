@@ -97,88 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.wrapper-fixed {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url('/img/gym-595597_1920.png') center center / cover no-repeat;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wrapper {
-  overflow: hidden;
-  min-width: 1200px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper__content {
-  flex: 1;
-}
-
-.auth__content {
-  display: flex;
-  flex-direction: column;
-  animation: bounce 1.3s  cubic-bezier(.3,.96,.56,.81);
-}
-
-.auth__logo {
-  margin-bottom: 40px;
-  max-width: 100%;
-  display: block;
-}
-
-.auth__welcome {
-  border: 3px solid #131415;
-  background-color: #131415;
-  font-family: 'open_sans';
-  padding: 14px 22px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-}
-
-.auth__welcome:hover {
-  border: 3px solid #f89513;
-  background-color: #f89513;
-}
-
-@keyframes bounce {
-  0% {
-    opacity: 0;
-    transform: scale(.2)
-  }
-
-  20% {
-    transform: scale(1.2)
-  }
-
-  40% {
-    transform: scale(.9)
-  }
-
-  60% {
-    transform: scale(1.1)
-  }
-
-  80% {
-    transform: scale(0.95)
-  }
-
-  100% {
-    opacity: 100%;
-  }
-
-}
-
 
 .header {
   background-color: #131415;
@@ -1325,4 +1243,76 @@ button {
   width: 19px;
   height: 18px;
   background: url('../img/sprites_icons.png') -10px -184px;
+}
+
+
+.wrapper-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/gym-595597_1920.png') center center / cover no-repeat;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth__content {
+  display: flex;
+  flex-direction: column;
+  animation: bounce 1.3s  cubic-bezier(.3,.96,.56,.81);
+}
+
+.auth__logo {
+  margin-bottom: 40px;
+  max-width: 100%;
+  display: block;
+}
+
+.auth__welcome {
+  border: 3px solid #131415;
+  background-color: #131415;
+  font-family: 'open_sans';
+  padding: 14px 22px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.auth__welcome:hover {
+  border: 3px solid #f89513;
+  background-color: #f89513;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: scale(.2)
+  }
+
+  20% {
+    transform: scale(1.2)
+  }
+
+  40% {
+    transform: scale(.9)
+  }
+
+  60% {
+    transform: scale(1.1)
+  }
+
+  80% {
+    transform: scale(0.95)
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+
 }
